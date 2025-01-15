@@ -13,9 +13,10 @@ add_executable(GameEngine
     src/main.cpp
     src/graphics/basic_graphics.cpp    
     
+    src/utils/glad.c
 )
 
-# Include GLFW (replace with your library path or use find_package if installed)
+# Include Folder
 include_directories(include)
 
 # Link libraries

@@ -24,6 +24,7 @@ cmake .. -G "MinGW Makefiles"
 REM Check for configuration errors
 if %errorlevel% neq 0 (
     echo CMake configuration failed!
+    pause
     exit /b %errorlevel%
 )
 
@@ -34,6 +35,7 @@ cmake --build .
 REM Check for build errors
 if %errorlevel% neq 0 (
     echo Build failed!
+    pause
     exit /b %errorlevel%
 )
 
@@ -41,3 +43,4 @@ REM Return to the parent directory
 cd ..
 
 echo Build completed successfully!
+pause
